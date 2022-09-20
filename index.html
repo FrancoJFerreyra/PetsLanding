@@ -16,73 +16,102 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">PATNAT</a>
+          <a id="logo" class="navbar-brand" href="#">PATNAT</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="#">Catalog</a>
-              <a class="nav-link" href="#">News</a>
-              <a class="nav-link" href="#">Advices</a>
-              <a class="nav-link" href="#">Contacts</a>
-              <a class="nav-link" href="#">For owners</a>
-            </div>
+            <ul class="navbar-nav">
+              <li><a class="nav-link" href="#">Catalog</a></li>
+              <li><a class="nav-link" href="#">News</a></li>
+              <li><a class="nav-link" href="#">Advices</a></li>
+              <li><a class="nav-link" href="#">Contacts</a></li>
+              <li<a class="nav-link" href="#">For owners</a></li>
+            </ul>
           </div>
         </div>
       </nav>
       <div class="title__container">
         <h1>All for pets</h1>
-        <p>In Patnat feed we use real high-quality meat from our own Miratorg farms</p>
-        <a href="#" class="btn btn-primary">Promotions</a>
+        <p class="header__p">In Patnat feed we use real high-quality meat from our own Miratorg farms</p>
+        <p><a href="#" class="btn btn-primary">Promotions</a></p>
       </div>
-      <!-- <img src="./assets/headerBackground.png" alt="Pets"> -->
     </div>
   </header>
   <section id="section1">
     <div class="container">
       <div class="section1__nav--container">
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">For dogs</a>
-          <a href="#" class="list-group-item list-group-item-action">For cats</a>
-          <a href="#" class="list-group-item list-group-item-action">Goodies</a>
-        </div>
-        <a class="btn btn-secondary btn-choose">Choose</a>
+        <ul class="nav nav-tabs">
+          <li class="nav-item"><a href="#" class="nav-link">For dogs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">For cats</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Goodies</a></li>
+        </ul>
+        <a href="#" class="btn btn-secondary btn-choose">Choose</a>
       </div>
       <div class="section1__content--container">
-        <img src="./assets/section1Cat.png" class="section1__content--img" alt="Cat">
-        <div class="section1__options--container">
-          <a href="#"><img src="./assets/cardOption1.png" alt="Buy option"></a>
-          <a href="#"><img src="./assets/cardOption2.png" alt="Buy option"></a>
-          <a href="#"><img src="./assets/cardOption3.png" alt="Buy option"></a>
+        <div class="section1__content--card section1__content--catCard">
+          <img src="./assets/section1Cat.png" class="section1__content--img" alt="Cat">
+          <div class="section1__options">
+            <ul class="list-group">
+              <li class="list-group-item"><a href="#"><img src="./assets/cardOption1.png" alt="Buy option"></a></li>
+              <li class="list-group-item"><a href="#"><img src="./assets/cardOption2.png" alt="Buy option"></a></li>
+              <li class="list-group-item"><a href="#"><img src="./assets/cardOption3.png" alt="Buy option"></a></li>
+            </ul>
+            <div>
+              <a href="#" class="btn btn-secondary">All for cats</a>
+            </div>
+          </div>
         </div>
-        <a href="#" class="btn btn-secondary">All for cats</a>
-        <img src="./assets/section1Dog.png" class="section1__content--img" alt="Dog">
-        <div class="section1__options--container">
-          <a href="#"><img src="./assets/cardOption1.png" alt="Buy option"></a>
-          <a href="#"><img src="./assets/cardOption2.png" alt="Buy option"></a>
-          <a href="#"><img src="./assets/cardOption3.png" alt="Buy option"></a>
+        <div class="section1__content--card">
+          <img src="./assets/section1Dog.png" class="section1__content--img" alt="Dog">
+          <div class="section1__options">
+            <ul class="list-group">
+              <li class="list-group-item"><a href="#"><img src="./assets/cardOption1.png" alt="Buy option"></a></li>
+              <li class="list-group-item"><a href="#"><img src="./assets/cardOption2.png" alt="Buy option"></a></li>
+              <li class="list-group-item"><a href="#"><img src="./assets/cardOption3.png" alt="Buy option"></a></li>
+            </ul>
+            <div>
+              <a href="#" class="btn btn-secondary">All for dogs</a>
+            </div>
+          </div>
         </div>
-        <a href="#" class="btn btn-secondary">All for dogs</a>
       </div>
     </div>
   </section>
-  <section>
-    <div class="container">
-      <div class="">
+  <section id="section2">
+    <div class="container section2__container">
+      <div class="section2__title--container">
         <h2>The right choice</h2>
         <p>Before you start a pet, you need to think everything through</p>
       </div>
-      <div class="list-group">
-        <a href="#" class="btn list-group-item-action">All</a>
-        <a href="#" class="btn list-group-item-action">News</a>
-        <a href="#" class="btn list-group-item-action">Advices</a>
-        <a href="#" class="btn list-group-item-action">Promo</a>
-      </div>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <a href="#" class="btn list-group-item list-group-item-action">
+            <img src="./assets/allIcon.svg">All
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="#" class="btn list-group-item list-group-item-action">
+            <img src="./assets/chaitIcon.svg">News
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="#" class="btn list-group-item list-group-item-action">
+            <img src="./assets/chaitIcon.svg">
+            Advices
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="#" class="btn list-group-item list-group-item-action">
+            <img src="./assets/starIcon.svg">
+            Promo
+          </a>
+        </li>
+      </ul>
       <div class="">
         <input class="form-control" type="text" placeholder="Recently added">
-        <button class="btn btn-secondary"></button>
+        <button class="btn btn-secondary"><img src="./assets/arrowDown.svg"></button>
       </div>
       <div class="">
         <div class="card">
@@ -120,7 +149,6 @@
         <button class="btn btn-success">Promo</button>
         <button class="btn btn-secondary">View more</button>
       </div>
-    </div>
     </div>
   </section>
   <section>
@@ -172,6 +200,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+    </div>
   </section>
   <footer>
     <div class="container">

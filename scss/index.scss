@@ -1,28 +1,94 @@
 @import '../bootstrap/scss/bootstrap.scss';
 
+// @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//   /* Retina-specific stuff here */
+// }
+
+#logo {
+  display: block;
+  text-indent: -1000px;
+  padding: 0;
+  font-size: 0;
+  height: 13px;
+  width: 102px;
+  background: center/contain no-repeat url(../assets/patnatMobileLogo.svg);
+}
+header {
+  background: bottom/auto 50% no-repeat url(../assets/headerBackground.png),
+    linear-gradient(#e1dfe2, #d5d3d6);
+}
 .title__container {
-  padding: 4rem 0 21.5rem 0;
+  padding: 4rem 0 21.5rem;
   text-align: center;
+  h1 {
+    font-weight: 700;
+  }
+}
+.header__p {
+  color: $gray-900;
 }
 .section1__nav--container {
-  margin-top: -4.25rem;
+  margin-top: -4.9rem;
   margin-bottom: 5rem;
-  background-color: $gray-200;
+  background: linear-gradient(45deg, $gray-200, $gray-200 83%);
   border-radius: 1.25rem;
   text-align: center;
+  ul {
+    column-gap: 3rem;
+    a {
+      padding: 1.75rem 0 1.5rem;
+    }
+  }
 }
 .btn-choose {
-  border-color: $gray-900;
-  margin: 1.75rem 0;
+  border: 1px solid $gray-900;
+  margin: 1.5rem 0 1.75rem;
 }
-// .section1__content--container {
-// }
+.section1__content--card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section1__content--catCard {
+  margin-bottom: 3.1rem;
+}
 .section1__content--img {
   border-radius: 2rem;
-  width: 100%;
+  margin: 0 1.18rem;
 }
-.section1__options--container {
-  display: flex;
-  justify-content: center;
-  column-gap: 2.375rem;
+.section1__options {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: -1.56rem;
+  background: linear-gradient(to right, $gray-100 95%, $gray-100 78.85%);
+  text-align: center;
+  border-radius: 1.5rem;
+  border: 1px #e6e8ec solid;
+  box-shadow: 0px 0.6rem 3rem rgba(15, 15, 15, 0.1);
+  margin-top: -11rem;
+  ul {
+    column-gap: 2.375rem;
+    padding-top: 1.7rem;
+    padding-bottom: 0.8rem;
+  }
+  .btn {
+    margin-bottom: 1.5rem;
+  }
+}
+.section2__container {
+  background-color: $gray-200;
+  border-radius: 2rem;
+  margin-top: 6.06rem;
+  ul {
+    align-items: center;
+    color: $gray-900;
+    column-gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+}
+.section2__title--container {
+  padding: 4rem 0 3rem;
 }

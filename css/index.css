@@ -110,26 +110,26 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.2;
   color: #23262f;
 }
 
 h1, .h1 {
-  font-size: calc(1.5rem + 3vw);
+  font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 3.75rem;
+    font-size: 2.5rem;
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.425rem + 2.1vw);
+  font-size: calc(1.325rem + 0.9vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -1995,7 +1995,7 @@ progress {
   display: block;
   width: 100%;
   padding: 0.875rem 1rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
   color: #23262f;
@@ -2185,7 +2185,7 @@ textarea.form-control-lg {
   width: 100%;
   padding: 0.875rem 3rem 0.875rem 1rem;
   -moz-padding-start: calc(1rem - 3px);
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
   color: #777e90;
@@ -2577,7 +2577,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   padding: 0.875rem 1rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
   color: #777e90;
@@ -2817,15 +2817,15 @@ textarea.form-control-lg {
 }
 
 .btn {
-  --bs-btn-padding-x: 1.5rem;
-  --bs-btn-padding-y: 1rem;
+  --bs-btn-padding-x: 1rem;
+  --bs-btn-padding-y: 0.75rem;
   --bs-btn-font-family: ;
-  --bs-btn-font-size: 1rem;
-  --bs-btn-font-weight: 400;
+  --bs-btn-font-size: 0.875rem;
+  --bs-btn-font-weight: 500;
   --bs-btn-line-height: 1.5;
   --bs-btn-color: #777e90;
   --bs-btn-bg: transparent;
-  --bs-btn-border-width: 1px;
+  --bs-btn-border-width: none;
   --bs-btn-border-color: transparent;
   --bs-btn-border-radius: 5.625rem;
   --bs-btn-hover-border-color: transparent;
@@ -2847,7 +2847,7 @@ textarea.form-control-lg {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+  border: none;
   border-radius: var(--bs-btn-border-radius);
   background-color: var(--bs-btn-bg);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2860,7 +2860,6 @@ textarea.form-control-lg {
 :not(.btn-check) + .btn:hover, .btn:first-child:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
-  border-color: var(--bs-btn-hover-border-color);
 }
 .btn:focus-visible {
   color: var(--bs-btn-hover-color);
@@ -2877,7 +2876,6 @@ textarea.form-control-lg {
 .btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
-  border-color: var(--bs-btn-active-border-color);
 }
 .btn-check:checked + .btn:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .btn:first-child:active:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible {
   box-shadow: var(--bs-btn-focus-box-shadow);
@@ -3166,13 +3164,13 @@ textarea.form-control-lg {
   --bs-btn-font-weight: 400;
   --bs-btn-color: var(--bs-link-color);
   --bs-btn-bg: transparent;
-  --bs-btn-border-color: transparent;
+  --bs-btn-border-color: none;
   --bs-btn-hover-color: var(--bs-link-hover-color);
-  --bs-btn-hover-border-color: transparent;
+  --bs-btn-hover-border-color: none;
   --bs-btn-active-color: var(--bs-link-hover-color);
-  --bs-btn-active-border-color: transparent;
+  --bs-btn-active-border-color: none;
   --bs-btn-disabled-color: #777e90;
-  --bs-btn-disabled-border-color: transparent;
+  --bs-btn-disabled-border-color: none;
   --bs-btn-box-shadow: none;
   --bs-btn-focus-shadow-rgb: 68, 70, 78;
   text-decoration: underline;
@@ -3607,8 +3605,8 @@ textarea.form-control-lg {
 }
 
 .dropdown-toggle-split {
-  padding-right: 1.125rem;
-  padding-left: 1.125rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
 }
 .dropdown-toggle-split::after, .dropup .dropdown-toggle-split::after, .dropend .dropdown-toggle-split::after {
   margin-left: 0;
@@ -3660,6 +3658,7 @@ textarea.form-control-lg {
   --bs-nav-link-disabled-color: #777e90;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -3691,23 +3690,23 @@ textarea.form-control-lg {
 .nav-tabs {
   --bs-nav-tabs-border-width: 1px;
   --bs-nav-tabs-border-color: #dee2e6;
-  --bs-nav-tabs-border-radius: 0.375rem;
-  --bs-nav-tabs-link-hover-border-color: #f6f3f1 #f6f3f1 #dee2e6;
+  --bs-nav-tabs-link-hover-border-color: 0 0 #23262f;
   --bs-nav-tabs-link-active-color: #495057;
   --bs-nav-tabs-link-active-bg: #fcfcfd;
   --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fcfcfd;
   border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
 }
 .nav-tabs .nav-link {
-  margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
   background: none;
   border: var(--bs-nav-tabs-border-width) solid transparent;
+  color: #777e90;
   border-top-left-radius: var(--bs-nav-tabs-border-radius);
   border-top-right-radius: var(--bs-nav-tabs-border-radius);
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   isolation: isolate;
-  border-color: var(--bs-nav-tabs-link-hover-border-color);
+  border-bottom-color: var(--bs-nav-tabs-link-hover-border-color);
+  color: #23262f;
 }
 .nav-tabs .nav-link.disabled, .nav-tabs .nav-link:disabled {
   color: var(--bs-nav-link-disabled-color);
@@ -3718,7 +3717,7 @@ textarea.form-control-lg {
 .nav-tabs .nav-item.show .nav-link {
   color: var(--bs-nav-tabs-link-active-color);
   background-color: var(--bs-nav-tabs-link-active-bg);
-  border-color: var(--bs-nav-tabs-link-active-border-color);
+  border-bottom: var(--bs-nav-tabs-link-active-border-color);
 }
 .nav-tabs .dropdown-menu {
   margin-top: calc(-1 * var(--bs-nav-tabs-border-width));
@@ -3788,7 +3787,7 @@ textarea.form-control-lg {
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
   --bs-navbar-toggler-font-size: 1.25rem;
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3e%3c!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license %28Commercial License%29 Copyright 2022 Fonticons, Inc. --%3e%3cpath stroke='%23777e90' d='M32 288c-17.7 0-32 14.3-32 32s14.3 32 32 32l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 288zm0-128c-17.7 0-32 14.3-32 32s14.3 32 32 32l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 160z'/%3e%3c/svg%3e");
+  --bs-navbar-toggler-icon-bg: url("../../assets/burgerIcon.svg");
   --bs-navbar-toggler-border-color: none;
   --bs-navbar-toggler-border-radius: 5.625rem;
   --bs-navbar-toggler-focus-width: none;
@@ -4841,8 +4840,8 @@ textarea.form-control-lg {
   --bs-list-group-bg: none;
   --bs-list-group-border-color: none;
   --bs-list-group-border-width: 1px;
-  --bs-list-group-border-radius: 0.375rem;
-  --bs-list-group-item-padding-x: 1rem;
+  --bs-list-group-border-radius: none;
+  --bs-list-group-item-padding-x: none;
   --bs-list-group-item-padding-y: 0.5rem;
   --bs-list-group-action-color: none;
   --bs-list-group-action-hover-color: $gray-900;
@@ -4855,6 +4854,7 @@ textarea.form-control-lg {
   --bs-list-group-active-bg: #23262f;
   --bs-list-group-active-border-color: #23262f;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   text-align: center;
@@ -8014,11 +8014,11 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: calc(1.5rem + 3vw) !important;
+  font-size: calc(1.375rem + 1.5vw) !important;
 }
 
 .fs-2 {
-  font-size: calc(1.425rem + 2.1vw) !important;
+  font-size: calc(1.325rem + 0.9vw) !important;
 }
 
 .fs-3 {
@@ -10885,10 +10885,10 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 3.75rem !important;
+    font-size: 2.5rem !important;
   }
   .fs-2 {
-    font-size: 3rem !important;
+    font-size: 2rem !important;
   }
   .fs-3 {
     font-size: 1.75rem !important;
@@ -10929,32 +10929,104 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+#logo {
+  display: block;
+  text-indent: -1000px;
+  padding: 0;
+  font-size: 0;
+  height: 13px;
+  width: 102px;
+  background: center/contain no-repeat url(../assets/patnatMobileLogo.svg);
+}
+
+header {
+  background: bottom/auto 50% no-repeat url(../assets/headerBackground.png), linear-gradient(#e1dfe2, #d5d3d6);
+}
+
 .title__container {
-  padding: 4rem 0 21.5rem 0;
+  padding: 4rem 0 21.5rem;
   text-align: center;
+}
+.title__container h1, .title__container .h1 {
+  font-weight: 700;
+}
+
+.header__p {
+  color: #23262f;
 }
 
 .section1__nav--container {
-  margin-top: -4.25rem;
+  margin-top: -4.9rem;
   margin-bottom: 5rem;
-  background-color: #f6f3f1;
+  background: linear-gradient(45deg, #f6f3f1, #f6f3f1 83%);
   border-radius: 1.25rem;
   text-align: center;
 }
+.section1__nav--container ul {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+.section1__nav--container ul a {
+  padding: 1.75rem 0 1.5rem;
+}
 
 .btn-choose {
-  border-color: #23262f;
-  margin: 1.75rem 0;
+  border: 1px solid #23262f;
+  margin: 1.5rem 0 1.75rem;
+}
+
+.section1__content--card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section1__content--catCard {
+  margin-bottom: 3.1rem;
 }
 
 .section1__content--img {
   border-radius: 2rem;
-  width: 100%;
+  margin: 0 1.18rem;
 }
 
-.section1__options--container {
-  display: flex;
-  justify-content: center;
+.section1__options {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: -1.56rem;
+  background: linear-gradient(to right, #fcfcfd 95%, #fcfcfd 78.85%);
+  text-align: center;
+  border-radius: 1.5rem;
+  border: 1px #e6e8ec solid;
+  box-shadow: 0px 0.6rem 3rem rgba(15, 15, 15, 0.1);
+  margin-top: -11rem;
+}
+.section1__options ul {
   -moz-column-gap: 2.375rem;
        column-gap: 2.375rem;
+  padding-top: 1.7rem;
+  padding-bottom: 0.8rem;
+}
+.section1__options .btn {
+  margin-bottom: 1.5rem;
+}
+
+.section2__container {
+  background-color: #f6f3f1;
+  border-radius: 2rem;
+  margin-top: 6.06rem;
+}
+.section2__container ul {
+  align-items: center;
+  color: #23262f;
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.section2__title--container {
+  padding: 4rem 0 3rem;
 }/*# sourceMappingURL=index.css.map */

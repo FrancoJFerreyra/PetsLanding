@@ -8,8 +8,8 @@
   --#{$prefix}list-group-bg: none;
   --#{$prefix}list-group-border-color: none;
   --#{$prefix}list-group-border-width: #{$list-group-border-width};
-  --#{$prefix}list-group-border-radius: #{$list-group-border-radius};
-  --#{$prefix}list-group-item-padding-x: #{$list-group-item-padding-x};
+  --#{$prefix}list-group-border-radius: none;
+  --#{$prefix}list-group-item-padding-x: none;
   --#{$prefix}list-group-item-padding-y: #{$list-group-item-padding-y};
   --#{$prefix}list-group-action-color: none;
   --#{$prefix}list-group-action-hover-color: $gray-900;
@@ -24,6 +24,7 @@
   // scss-docs-end list-group-css-vars
 
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   text-align: center;
