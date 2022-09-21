@@ -9,11 +9,11 @@
   --#{$prefix}list-group-border-color: none;
   --#{$prefix}list-group-border-width: #{$list-group-border-width};
   --#{$prefix}list-group-border-radius: none;
-  --#{$prefix}list-group-item-padding-x: none;
-  --#{$prefix}list-group-item-padding-y: #{$list-group-item-padding-y};
+  --#{$prefix}list-group-item-padding-x: 0.625rem;
+  --#{$prefix}list-group-item-padding-y: 0.625rem;
   --#{$prefix}list-group-action-color: none;
-  --#{$prefix}list-group-action-hover-color: $gray-900;
-  --#{$prefix}list-group-action-hover-bg: #{$list-group-hover-bg};
+  --#{$prefix}list-group-action-hover-color: #{$gray-900};
+  --#{$prefix}list-group-action-hover-bg: #{$gray-100};
   --#{$prefix}list-group-action-active-color: none;
   --#{$prefix}list-group-action-active-bg: #{$gray-100};
   --#{$prefix}list-group-disabled-color: #{$list-group-disabled-color};
@@ -33,6 +33,10 @@
   padding-left: 0; // reset padding because ul and ol
   margin-bottom: 0;
   @include border-radius(var(--#{$prefix}list-group-border-radius));
+  list-style: none;
+  a {
+    text-decoration: none;
+  }
 }
 
 .list-group-numbered {
@@ -62,12 +66,14 @@
     z-index: 1; // Place hover/focus items above their siblings for proper border styling
     color: $gray-900;
     text-decoration: none;
-    background-color: none;
+    background-color: $gray-100;
+    border-radius: 6.25rem;
   }
 
   &:active {
-    color: var(--#{$prefix}list-group-action-active-color);
-    background-color: none;
+    color: $gray-900;
+    background-color: $gray-100;
+    border-radius: 6.25rem;
   }
 }
 
@@ -80,19 +86,11 @@
   display: block;
   padding: var(--#{$prefix}list-group-item-padding-y)
     var(--#{$prefix}list-group-item-padding-x);
-  color: $gray-900 0.8;
+  color: $gray-900;
   text-decoration: if($link-decoration == none, null, none);
   background-color: var(--#{$prefix}list-group-bg);
   border: var(--#{$prefix}list-group-border-width) solid
     var(--#{$prefix}list-group-border-color);
-
-  &:first-child {
-    @include border-top-radius(inherit);
-  }
-
-  &:last-child {
-    @include border-bottom-radius(inherit);
-  }
 
   &.disabled,
   &:disabled {
@@ -105,7 +103,7 @@
   &.active {
     z-index: 2; // Place active items above their siblings for proper border styling
     color: var(--#{$prefix}list-group-active-color);
-    background-color: var(--#{$prefix}list-group-active-bg);
+    background-color: $gray-100;
     border-color: var(--#{$prefix}list-group-active-border-color);
   }
 

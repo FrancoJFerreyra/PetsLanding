@@ -946,8 +946,8 @@ $input-group-addon-border-color: $input-border-color !default;
 // scss-docs-end input-group-variables
 
 // scss-docs-start form-select-variables
-$form-select-padding-y: $input-padding-y !default;
-$form-select-padding-x: $input-padding-x !default;
+$form-select-padding-y: 0.75rem !default;
+$form-select-padding-x: 1rem !default;
 $form-select-font-family: $input-font-family !default;
 $form-select-font-size: $input-font-size !default;
 $form-select-indicator-padding: $form-select-padding-x * 3 !default; // Extra padding for background-image
@@ -959,9 +959,10 @@ $form-select-disabled-color: null !default;
 $form-select-disabled-bg: $gray-200 !default;
 $form-select-disabled-border-color: $input-disabled-border-color !default;
 $form-select-bg-position: right $form-select-padding-x center !default;
-$form-select-bg-size: 16px 12px !default; // In pixels because image dimensions
+$form-select-bg-size: 32px 32px !default; // In pixels because image dimensions
 $form-select-indicator-color: $gray-800 !default;
-$form-select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-indicator-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>") !default;
+
+$form-select-indicator: url(../../assets/selectIcon.svg) !default;
 
 $form-select-feedback-icon-padding-end: $form-select-padding-x * 2.5 +
   $form-select-indicator-padding !default;
@@ -971,7 +972,7 @@ $form-select-feedback-icon-size: $input-height-inner-half
 
 $form-select-border-width: $input-border-width !default;
 $form-select-border-color: $input-border-color !default;
-$form-select-border-radius: $input-border-radius !default;
+$form-select-border-radius: 0.75rem !default;
 $form-select-box-shadow: $box-shadow-inset !default;
 
 $form-select-focus-border-color: $input-focus-border-color !default;
@@ -1085,7 +1086,7 @@ $zindex-toast: 1090 !default;
 $nav-link-padding-y: 0.5rem !default;
 $nav-link-padding-x: 1rem !default;
 $nav-link-font-size: null !default;
-$nav-link-font-weight: null !default;
+$nav-link-font-weight: 400 !default;
 $nav-link-color: var(--#{$prefix}link-color) !default;
 $nav-link-hover-color: var(--#{$prefix}link-hover-color) !default;
 $nav-link-transition: color 0.15s ease-in-out,
