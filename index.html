@@ -33,7 +33,7 @@
         </div>
       </nav>
       <div class="title__container">
-        <!-- <img src="./assets/headerVectorMobile.svg" alt="vector"> -->
+        <img src="./assets/headerVectorMobile.svg" alt="vector">
         <h1>All for pets</h1>
         <p class="header__p">In Patnat feed we use real high-quality meat from our own Miratorg farms</p>
         <p><a href="#" class="btn btn-primary">Promotions</a></p>
@@ -42,17 +42,21 @@
   </header>
   <section id="section1">
     <div class="container section1__container">
-      <div class="section1__nav--container">
-        <ul class="nav nav-tabs">
-          <li class="nav-item"><a href="#" class="nav-link">For dogs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">For cats</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Goodies</a></li>
-        </ul>
-        <a href="#" class="btn btn-secondary btn-choose">Choose</a>
+      <div class="section1__positionNav">
+        <div class="section1__nav--container">
+          <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#" class="nav-link">For dogs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">For cats</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Goodies</a></li>
+          </ul>
+          <a href="#" class="btn btn-secondary btn-choose">Choose</a>
+        </div>
       </div>
       <div class="section1__content--container">
         <div class="section1__content--card section1__content--catCard">
-          <img src="./assets/section1Cat.png" class="section1__content--img" alt="Cat">
+          <div class="section1__content--img">
+            <img src="./assets/section1Cat.png" alt="Cat">
+          </div>
           <div class="section1__options">
             <ul class="list-group">
               <li class="list-group-item"><a href="#"><img src="./assets/cardOption1.png" alt="Buy option"></a></li>
@@ -65,7 +69,9 @@
           </div>
         </div>
         <div class="section1__content--card">
-          <img src="./assets/section1Dog.png" class="section1__content--img" alt="Dog">
+          <div class="section1__content--img">
+            <img src="./assets/section1Dog.png" alt="Dog">
+          </div>
           <div class="section1__options">
             <ul class="list-group">
               <li class="list-group-item"><a href="#"><img src="./assets/cardOption1.png" alt="Buy option"></a></li>
@@ -138,7 +144,7 @@
           </div>
         </div>
         <div class="card section2__card">
-          <img src="./assets/section2Dog.png" class="card-img-top" alt="Dog">
+          <img src="./assets/section2DogMobile.png" class="card-img-top" alt="Dog">
           <div class="card-body section2__card--body">
             <h5>Winner are in OZON!</h5>
             <p class="card-text">Winner dry food for cats and dogs will be available in the OZON online store from
@@ -213,7 +219,7 @@
     </div>
   </section>
   <footer id="footer">
-    <div class="container">
+    <div class="container footer__container">
       <div class="footer__logo">
         <a class="nav-link" href="#"><img src="./assets/patnatDesktopLogo.svg" alt="logo"></a>
       </div>
@@ -227,12 +233,14 @@
           <li class="nav-item"><a class="nav-link" href="#">Promo</a></li>
         </ul>
       </div>
-      <h6 class="">JOIN OUR COMMUNITY</h6>
-      <div class="submit__form">
-        <input class="form-control" type="email" placeholder="Enter your email">
-        <button class="btn btn-primary" type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+      <div class="footer__joinCommunity">
+        <h6 class="">JOIN OUR COMMUNITY</h6>
+        <div class="submit__form">
+          <input class="form-control" type="email" placeholder="Enter your email">
+          <button class="btn btn-primary" type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <p>Copyright © 2022 noname</p>
       </div>
-      <p>Copyright © 2022 noname</p>
     </div>
   </footer>
   <script src="./bootstrap/bootstrap.min.js"></script>

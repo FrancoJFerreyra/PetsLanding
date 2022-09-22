@@ -116,20 +116,20 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(1.525rem + 3.3vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: calc(1.425rem + 2.1vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 
@@ -3787,7 +3787,7 @@ textarea.form-control-lg {
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
   --bs-navbar-toggler-font-size: 1.25rem;
-  --bs-navbar-toggler-icon-bg: url("../../assets/burgerIcon.svg");
+  --bs-navbar-toggler-icon-bg: url("../assets/burgerIcon.svg");
   --bs-navbar-toggler-border-color: none;
   --bs-navbar-toggler-border-radius: 5.625rem;
   --bs-navbar-toggler-focus-width: none;
@@ -8016,11 +8016,11 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: calc(1.375rem + 1.5vw) !important;
+  font-size: calc(1.525rem + 3.3vw) !important;
 }
 
 .fs-2 {
-  font-size: calc(1.325rem + 0.9vw) !important;
+  font-size: calc(1.425rem + 2.1vw) !important;
 }
 
 .fs-3 {
@@ -10887,10 +10887,10 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 2.5rem !important;
+    font-size: 4rem !important;
   }
   .fs-2 {
-    font-size: 2rem !important;
+    font-size: 3rem !important;
   }
   .fs-3 {
     font-size: 1.75rem !important;
@@ -10942,26 +10942,44 @@ textarea.form-control-lg {
 }
 
 header {
+  position: relative;
   background: bottom/auto 50% no-repeat url(../assets/headerBackground.png), linear-gradient(#e1dfe2, #d5d3d6);
 }
 
 .title__container {
-  position: relative;
-  background: top/auto 40% no-repeat url(../assets/headerVector.png);
   padding: 4rem 0 21.5rem;
   text-align: center;
 }
 .title__container h1, .title__container .h1 {
   font-weight: 700;
 }
+.title__container img {
+  position: absolute;
+  top: 5.5rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .header__p {
   color: #23262f;
 }
 
+.section1__container {
+  padding-bottom: 6.06rem;
+}
+
+.section1__positionNav {
+  position: relative;
+}
+
 .section1__nav--container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10;
   margin-top: -4.9rem;
-  margin-bottom: 5rem;
   background: linear-gradient(45deg, #f6f3f1, #f6f3f1 83%);
   border-radius: 1.25rem;
   text-align: center;
@@ -10979,24 +10997,24 @@ header {
   margin: 1.5rem 0 1.75rem;
 }
 
-.section1__container {
-  padding-bottom: 6.06rem;
-}
-
 .section1__content--card {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .section1__content--catCard {
+  padding-top: 10.8rem;
   margin-bottom: 3.1rem;
 }
 
 .section1__content--img {
+  padding: 0rem 1.18rem;
+}
+.section1__content--img img {
+  width: 100%;
   border-radius: 2rem;
-  margin: 0 1.18rem;
 }
 
 .section1__options {
@@ -11035,6 +11053,14 @@ header {
 }
 .section2__nav img {
   padding-right: 0.25rem;
+}
+.section2__nav a {
+  display: flex;
+  align-items: center;
+}
+.section2__nav a:focus {
+  background-color: #fcfcfd;
+  border-radius: 6.25rem;
 }
 
 .section2__title--container {
@@ -11120,6 +11146,7 @@ header {
   margin-top: 2.5rem;
 }
 .section4__form--container p {
+  margin-bottom: 0;
   text-align: center;
   padding: 0.5rem 0 10.12rem;
 }
@@ -11136,7 +11163,40 @@ header {
   border-radius: 100%;
 }
 
+.footer__container {
+  background-color: #f6f3f1;
+}
+
 .footer__logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.footer__nav--container {
+  margin-bottom: 3rem;
+}
+.footer__nav--container a {
+  color: #777e90;
+}
+.footer__nav--container a:hover, .footer__nav--container a:focus {
+  color: #23262f;
+}
+
+.footer__joinCommunity {
   text-align: center;
-  margin: 4rem 0 3rem;
+  margin-bottom: 2.875rem;
+}
+.footer__joinCommunity h6, .footer__joinCommunity .h6 {
+  margin-bottom: 1rem;
+}
+.footer__joinCommunity div {
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  header {
+    background: bottom/auto 70% no-repeat url(../assets/headerBackground.png), linear-gradient(#e1dfe2, #d5d3d6);
+  }
 }/*# sourceMappingURL=index.css.map */
