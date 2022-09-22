@@ -5848,6 +5848,7 @@ textarea.form-control-lg {
 }
 
 .carousel-inner {
+  margin-bottom: 2rem;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -5877,7 +5878,8 @@ textarea.form-control-lg {
 .carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 /* rtl:begin:ignore */
@@ -5926,8 +5928,8 @@ textarea.form-control-lg {
   color: #23262f;
   text-align: center;
   background: #fcfcfd;
-  border-width: 0.1rem;
-  border-color: #23262f;
+  border-width: 0;
+  border-color: none;
   border-radius: 100%;
   opacity: none;
   transition: opacity 0.15s ease;
@@ -5942,6 +5944,8 @@ textarea.form-control-lg {
 .carousel-control-next:hover,
 .carousel-control-next:focus {
   color: #23262f;
+  border-width: 0.1rem;
+  border-color: #23262f;
   text-decoration: none;
   outline: 0;
   opacity: none;
