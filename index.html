@@ -13,7 +13,7 @@
 
 <body>
   <header>
-    <div class="container">
+    <div class="container-xl">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a id="logo" class="navbar-brand" href="#">PATNAT</a>
@@ -39,42 +39,43 @@
           </div>
         </div>
       </nav>
-      <div class="title__container">
-        <!-- <img src="./assets/headerVectorMobile.svg" alt="vector"> -->
-        <h1>All for pets</h1>
-        <p class="header__p">In Patnat feed we use real high-quality meat from our own Miratorg farms</p>
-        <p><a href="#" class="btn btn-primary">Promotions</a></p>
+      <div class="row">
+        <div class="col-lg-5 title__container">
+          <!-- <img src="./assets/headerVectorMobile.svg" alt="vector"> -->
+          <h1>All for pets</h1>
+          <p class="header__p">In Patnat feed we use real high-quality meat from our own Miratorg farms</p>
+          <p><a href="#" class="btn btn-primary">Promotions</a></p>
+        </div>
       </div>
     </div>
   </header>
   <section id="section1">
-    <div class="container section1__container">
+    <div class="container-xl section1__container">
       <div class="section1__positionNav">
-        <div class="row section1__nav--container">
-          <ul class="col-md-6 col-lg-4 nav nav-tabs section1__navList">
+        <div class="section1__nav--container">
+          <ul class="nav nav-tabs section1__navList">
             <li class="nav-item"><a href="#" class="nav-link">For dogs</a></li>
             <li class="nav-item"><a href="#" class="nav-link">For cats</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Goodies</a></li>
           </ul>
-          <!-- <ul class="list-group row section1__stepList">
-            <a href="#" class="list-group-item list-group-item-action col-md-3 btn btn-success">
-              <img src="./assets/interrogationIcon.svg" alt="interrogationIcon">1 step
-              <span>Indicate age</span>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action col-md-3">
-              <span class="btn btn-success">
-                <img src="./assets/interrogationIcon.svg" alt="interrogationIcon">1 step
-              </span> a breed
-            </a>
-            <a href="#" class="list-group-item list-group-item-action col-md-3">
-              <span class="btn btn-success">
-                <img src="./assets/interrogationIcon.svg" alt="interrogationIcon">1 step
-              </span> features
-            </a>
-            <a href="#" class="btn btn-secondary btn-choose list-group-item list-group-item-action col-md-3">Choose</a>
-          </ul> -->
-          <div class="">
-            <a href="#" class="btn btn-secondary btn-choose">Choose</a>
+          <div class="section1__steps--container">
+            <ol class="section1__steps">
+              <li>
+                <span class="btn btn-success"><img src="./assets/interrogationIcon.svg" alt="">1 step</span>
+                <p>Indicate age</p>
+              </li>
+              <li>
+                <span class="btn btn-info"><img src="./assets/interrogationIcon.svg" alt="">2 step</span>
+                <p>Select breed</p>
+              </li>
+              <li>
+                <span class="btn btn-warning"><img src="./assets/interrogationIcon.svg" alt="">2 step</span>
+                <p>Find features</p>
+              </li>
+            </ol>
+            <div class="">
+              <a href="#" class="btn btn-secondary btn-choose">Choose</a>
+            </div>
           </div>
         </div>
       </div>
@@ -83,14 +84,16 @@
           <div class="section1__content--img">
             <img src="./assets/section1Cat.png" alt="Cat">
           </div>
-          <div class="row section1__options">
-            <ul class="col-md-9 list-group">
-              <li class="list-group-item"><a href="#"><img src="./assets/cardOption1.png" alt="Buy option"></a></li>
-              <li class="list-group-item"><a href="#"><img src="./assets/cardOption2.png" alt="Buy option"></a></li>
-              <li class="list-group-item"><a href="#"><img src="./assets/cardOption3.png" alt="Buy option"></a></li>
-            </ul>
-            <div class="col-md-3">
-              <a href="#" class="btn btn-secondary section1__btn--option">All for cats</a>
+          <div class="section1__position--options">
+            <div class="section1__options">
+              <ul class="list-group">
+                <li class="list-group-item"><a href="#"><img src="./assets/cardOption1.png" alt="Buy option"></a></li>
+                <li class="list-group-item"><a href="#"><img src="./assets/cardOption2.png" alt="Buy option"></a></li>
+                <li class="list-group-item"><a href="#"><img src="./assets/cardOption3.png" alt="Buy option"></a></li>
+              </ul>
+              <div>
+                <a href="#" class="btn btn-secondary section1__btn--option">All for cats</a>
+              </div>
             </div>
           </div>
         </div>
@@ -98,14 +101,16 @@
           <div class="section1__content--img">
             <img src="./assets/section1Dog.png" alt="Dog">
           </div>
-          <div class="row section1__options">
-            <ul class="col-md-9 list-group">
-              <li class="list-group-item"><a href="#"><img src="./assets/cardOption1.png" alt="Buy option"></a></li>
-              <li class="list-group-item"><a href="#"><img src="./assets/cardOption2.png" alt="Buy option"></a></li>
-              <li class="list-group-item"><a href="#"><img src="./assets/cardOption3.png" alt="Buy option"></a></li>
-            </ul>
-            <div class="col-md-3">
-              <a href="#" class="btn btn-secondary section1__btn--option">All for dogs</a>
+          <div class="section1__position--options">
+            <div class="section1__options">
+              <ul class="list-group">
+                <li class="list-group-item"><a href="#"><img src="./assets/cardOption1.png" alt="Buy option"></a></li>
+                <li class="list-group-item"><a href="#"><img src="./assets/cardOption2.png" alt="Buy option"></a></li>
+                <li class="list-group-item"><a href="#"><img src="./assets/cardOption3.png" alt="Buy option"></a></li>
+              </ul>
+              <div>
+                <a href="#" class="btn btn-secondary section1__btn--option">All for dogs</a>
+              </div>
             </div>
           </div>
         </div>
@@ -113,84 +118,170 @@
     </div>
   </section>
   <section id="section2">
-    <div class="container section2__container">
-      <div class="section2__title--container">
-        <h2>The right choice</h2>
-        <p>Before you start a pet, you need to think everything through</p>
+    <!-- <div class="container-xxl"> -->
+    <div class="container-xl section2__container">
+      <div class="row">
+        <div class="col-md-6 section2__title--container">
+          <h2>The right choice</h2>
+          <p>Before you start a pet, you need to think everything through</p>
+        </div>
+        <ul class="col-md-9 nav section2__nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img src="./assets/allIcon.svg">All
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img src="./assets/chatIcon.svg">News
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img src="./assets/chatIcon.svg">Advices
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img src="./assets/starIcon.svg">Promo
+            </a>
+          </li>
+        </ul>
+        <div class="col-md-3">
+          <select class="section2__form--select form-select">
+            <option selected>Recently added</option>
+            <option value="1">News</option>
+            <option value="2">Advices</option>
+            <option value="3">Promo</option>
+          </select>
+        </div>
+        <div class="section2__cards--container">
+          <div class="card section2__card">
+            <img src="./assets/section2GrayCat.png" class="card-img-top" alt="Cat">
+            <div class="card-body section2__card--body">
+              <h5>How to feed a cat</h5>
+              <p class="card-text">The nutrition of a cat during pregnancy also affects the health of future kittens.
+              </p>
+            </div>
+            <div class="section2__categoryCard--btn">
+              <a href="#" class="btn btn-info"><img src="./assets/allIcon.svg" alt="News">News</a>
+            </div>
+          </div>
+          <div class="card section2__card">
+            <img src="./assets/section2Food.png" class="section2__card--img card-img-top" alt="Pets food">
+            <div class="card-body section2__card--body">
+              <h5>Winner are in OZON!</h5>
+              <p class="card-text">Winner dry food for cats and dogs will be available in the OZON online store from
+                December 1, 2020</p>
+            </div>
+            <div class="section2__categoryCard--btn">
+              <a href="#" class="btn btn-success"><img src="./assets/starIcon.svg" alt="Promo">Promo</a>
+            </div>
+          </div>
+          <div class="card section2__card">
+            <img src="./assets/section2DogMobile.png" class="card-img-top" alt="Dog">
+            <div class="card-body section2__card--body">
+              <h5>Winner are in OZON!</h5>
+              <p class="card-text">Winner dry food for cats and dogs will be available in the OZON online store from
+                December 1, 2020</p>
+            </div>
+            <div class="section2__categoryCard--btn">
+              <a href="#" class="btn btn-warning"><img src="./assets/chatIcon.svg" alt="Advice">Advice</a>
+            </div>
+          </div>
+          <div>
+            <ul class="list-group section2__chooselist">
+              <li><a href="#" class="section2__btn btn btn-info">News</a></li>
+              <li class="section2__btn--advices"><a href="#" class="section2__btn btn btn-warning">Advices</a></li>
+              <li><a href="#" class="section2__btn btn btn-success">Promo</a></li>
+              <li><a href="#" class="btn btn-secondary section2__viewMore">View more</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Desktop cards -->
+
+        <div class="row section2__desktopCards--container">
+          <div class="col-md-6">
+            <div class="card section2__card">
+              <img src="./assets/section2dog&cat.png" class="section2__card--img card-img-top" alt="Pets food">
+              <div class="card-body section2__card--body">
+                <h5>Choosing the right dog for you</h5>
+                <p class="card-text">Before you have a puppy, you need to think through everything and make sure that
+                  the pet fits into your lifestyle. Before you have a puppy, you need to think through everything and
+                  make sure that the pet fits into your lifestyle.</p>
+              </div>
+              <div class="section2__categoryCard--btn">
+                <a href="#" class="btn btn-info"><img src="./assets/allIcon.svg" alt="News">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card section2__card">
+              <img src="./assets/section2GrayCatDesktop.png" class="section2__card--img card-img-top" alt="Cat">
+              <div class="card-body section2__card--body">
+                <h5>How to feed a cat</h5>
+                <p class="card-text">The nutrition of a cat during pregnancy also affects the health of future kittens.
+                </p>
+              </div>
+              <div class="section2__categoryCard--btn">
+                <a href="#" class="btn btn-info"><img src="./assets/allIcon.svg" alt="News">News</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card section2__card">
+              <img src="./assets/section2FoodDesktop.png" class="section2__card--img card-img-top" alt="Pets food">
+              <div class="card-body section2__card--body">
+                <h5>Winner are in OZON!</h5>
+                <p class="card-text">Winner dry food for cats and dogs will be available in the OZON online store from
+                  December 1, 2020</p>
+              </div>
+              <div class="section2__categoryCard--btn">
+                <a href="#" class="btn btn-success"><img src="./assets/starIcon.svg" alt="Promo">Promo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card section2__card">
+              <img src="./assets/section2CatFood.png" class="section2__card--img card-img-top" alt="Pets food">
+              <div class="card-body section2__card--body">
+                <h5>Winner are in OZON!</h5>
+                <p class="card-text">Winner dry food for cats and dogs will be available in the OZON online store from
+                  December 1, 2020</p>
+              </div>
+              <div class="section2__categoryCard--btn">
+                <a href="#" class="btn btn-warning"><img src="./assets/chatIcon.svg" alt="Advice">Advice</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card section2__card">
+              <img src="./assets/section2Dog.png" class="section2__card--img card-img-top" alt="Dog">
+              <div class="card-body section2__card--body">
+                <h5>Winner are in OZON!</h5>
+                <p class="card-text">Winner dry food for cats and dogs will be available in the OZON online store from
+                  December 1, 2020</p>
+              </div>
+              <div class="section2__categoryCard--btn">
+                <a href="#" class="btn btn-success"><img src="./assets/starIcon.svg" alt="Promo">Promo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <ul class="list-group section2__chooselist">
+              <li><a href="#" class="section2__btn btn btn-info">News</a></li>
+              <li class="section2__btn--advices"><a href="#" class="section2__btn btn btn-warning">Advices</a></li>
+              <li><a href="#" class="section2__btn btn btn-success">Promo</a></li>
+            </ul>
+          </div>
+        </div>
+
       </div>
-      <ul class="nav section2__nav">
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <img src="./assets/allIcon.svg">All
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <img src="./assets/chatIcon.svg">News
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <img src="./assets/chatIcon.svg">Advices
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <img src="./assets/starIcon.svg">Promo
-          </a>
-        </li>
-      </ul>
-      <select class="form-select">
-        <option selected>Recently added</option>
-        <option value="1">News</option>
-        <option value="2">Advices</option>
-        <option value="3">Promo</option>
-      </select>
-      <div class="section2__cards--container">
-        <div class="card section2__card">
-          <img src="./assets/section2GrayCat.png" class="card-img-top" alt="Cat">
-          <div class="card-body section2__card--body">
-            <h5>How to feed a cat</h5>
-            <p class="card-text">The nutrition of a cat during pregnancy also affects the health of future kittens.
-            </p>
-          </div>
-          <div class="section2__categoryCard--btn">
-            <a href="#" class="btn btn-info"><img src="./assets/allIcon.svg" alt="News">New</a>
-          </div>
-        </div>
-        <div class="card section2__card section2__card--grayCat">
-          <img src="./assets/section2Food.png" class="card-img-top" alt="Pets food">
-          <div class="card-body section2__card--body">
-            <h5>Winner are in OZON!</h5>
-            <p class="card-text">Winner dry food for cats and dogs will be available in the OZON online store from
-              December 1, 2020</p>
-          </div>
-          <div class="section2__categoryCard--btn">
-            <a href="#" class="btn btn-success"><img src="./assets/starIcon.svg" alt="Promo">Promo</a>
-          </div>
-        </div>
-        <div class="card section2__card">
-          <img src="./assets/section2DogMobile.png" class="card-img-top" alt="Dog">
-          <div class="card-body section2__card--body">
-            <h5>Winner are in OZON!</h5>
-            <p class="card-text">Winner dry food for cats and dogs will be available in the OZON online store from
-              December 1, 2020</p>
-          </div>
-          <div class="section2__categoryCard--btn">
-            <a href="#" class="btn btn-warning"><img src="./assets/chatIcon.svg" alt="Advice">Advice</a>
-          </div>
-        </div>
-      </div>
-      <ul class="list-group section2__chooselist">
-        <li><a href="#" class="section2__btn btn btn-info">News</a></li>
-        <li class="section2__btn--advices"><a href="#" class="section2__btn btn btn-warning">Advices</a></li>
-        <li><a href="#" class="section2__btn btn btn-success">Promo</a></li>
-        <li><a href="#" class="btn btn-secondary section2__viewMore">View more</a></li>
-      </ul>
-    </div>
+      <!-- </div> -->
   </section>
   <section id="section3">
-    <div class="container section3__container">
+    <div class="container-xl section3__container">
       <div class="section3__title--container">
         <h2>#patnat</h2>
         <p>Share photos of your pets on Instagram and win prizes!</p>
@@ -229,7 +320,7 @@
     </div>
   </section>
   <section id="section4">
-    <div class="container section4__container">
+    <div class="container-xl section4__container">
       <div>
         <h2>Keep your ears open!</h2>
         <p>Subscribe to our newsletter to be the first to know about news and promotions.</p>
@@ -245,7 +336,7 @@
     </div>
   </section>
   <footer id="footer">
-    <div class="container footer__container">
+    <div class="container-xl footer__container">
       <div class="footer__logo">
         <a class="nav-link" href="#"><img src="./assets/patnatDesktopLogo.svg" alt="logo"></a>
       </div>
