@@ -21,7 +21,7 @@
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse">
             <ul class="navbar-nav">
               <li><a class="nav-link" href="#">Catalog</a></li>
               <li><a class="nav-link" href="#">News</a></li>
@@ -29,11 +29,18 @@
               <li><a class="nav-link" href="#">Contacts</a></li>
               <li<a class="nav-link" href="#">For owners</a></li>
             </ul>
+            <ul class="navbar-nav">
+              <li><a class="nav-link" href="#"><img src="./assets/searchIcon.svg" alt="searchIcon"></a></li>
+              <li><a class="nav-link" href="#"><img src="./assets/globe.svg" alt="globeIcon"></a></li>
+              <li><a class="nav-link" href="#"><img src="./assets/heartIcon.svg" alt="heartIcon"></a></li>
+              <li><a class="nav-link" href="#">Sign in</a></li>
+              <li<a class="nav-link" href="#"><img src="./assets/cartIcon.svg" alt="cartIcon"></a></li>
+            </ul>
           </div>
         </div>
       </nav>
       <div class="title__container">
-        <img src="./assets/headerVectorMobile.svg" alt="vector">
+        <!-- <img src="./assets/headerVectorMobile.svg" alt="vector"> -->
         <h1>All for pets</h1>
         <p class="header__p">In Patnat feed we use real high-quality meat from our own Miratorg farms</p>
         <p><a href="#" class="btn btn-primary">Promotions</a></p>
@@ -43,43 +50,62 @@
   <section id="section1">
     <div class="container section1__container">
       <div class="section1__positionNav">
-        <div class="section1__nav--container">
-          <ul class="nav nav-tabs">
+        <div class="row section1__nav--container">
+          <ul class="col-md-6 col-lg-4 nav nav-tabs section1__navList">
             <li class="nav-item"><a href="#" class="nav-link">For dogs</a></li>
             <li class="nav-item"><a href="#" class="nav-link">For cats</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Goodies</a></li>
           </ul>
-          <a href="#" class="btn btn-secondary btn-choose">Choose</a>
+          <!-- <ul class="list-group row section1__stepList">
+            <a href="#" class="list-group-item list-group-item-action col-md-3 btn btn-success">
+              <img src="./assets/interrogationIcon.svg" alt="interrogationIcon">1 step
+              <span>Indicate age</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action col-md-3">
+              <span class="btn btn-success">
+                <img src="./assets/interrogationIcon.svg" alt="interrogationIcon">1 step
+              </span> a breed
+            </a>
+            <a href="#" class="list-group-item list-group-item-action col-md-3">
+              <span class="btn btn-success">
+                <img src="./assets/interrogationIcon.svg" alt="interrogationIcon">1 step
+              </span> features
+            </a>
+            <a href="#" class="btn btn-secondary btn-choose list-group-item list-group-item-action col-md-3">Choose</a>
+          </ul> -->
+          <div class="">
+            <a href="#" class="btn btn-secondary btn-choose">Choose</a>
+          </div>
         </div>
       </div>
-      <div class="section1__content--container">
-        <div class="section1__content--card section1__content--catCard">
+      <div class="section1__content--container row">
+        <div class="section1__content--card col-md-6">
           <div class="section1__content--img">
             <img src="./assets/section1Cat.png" alt="Cat">
           </div>
-          <div class="section1__options">
-            <ul class="list-group">
+          <div class="row section1__options">
+            <ul class="col-md-9 list-group">
               <li class="list-group-item"><a href="#"><img src="./assets/cardOption1.png" alt="Buy option"></a></li>
               <li class="list-group-item"><a href="#"><img src="./assets/cardOption2.png" alt="Buy option"></a></li>
               <li class="list-group-item"><a href="#"><img src="./assets/cardOption3.png" alt="Buy option"></a></li>
             </ul>
-            <div>
-              <a href="#" class="btn btn-secondary">All for cats</a>
+            <div class="col-md-3">
+              <a href="#" class="btn btn-secondary section1__btn--option">All for cats</a>
             </div>
           </div>
         </div>
-        <div class="section1__content--card">
+        <div class="section1__content--card col-md-6">
           <div class="section1__content--img">
             <img src="./assets/section1Dog.png" alt="Dog">
           </div>
-          <div class="section1__options">
-            <ul class="list-group">
+          <div class="row section1__options">
+            <ul class="col-md-9 list-group">
               <li class="list-group-item"><a href="#"><img src="./assets/cardOption1.png" alt="Buy option"></a></li>
               <li class="list-group-item"><a href="#"><img src="./assets/cardOption2.png" alt="Buy option"></a></li>
               <li class="list-group-item"><a href="#"><img src="./assets/cardOption3.png" alt="Buy option"></a></li>
             </ul>
-            <div>
-              <a href="#" class="btn btn-secondary">All for dogs</a>
+            <div class="col-md-3">
+              <a href="#" class="btn btn-secondary section1__btn--option">All for dogs</a>
             </div>
           </div>
         </div>
