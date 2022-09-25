@@ -21,7 +21,7 @@
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav">
               <li><a class="nav-link" href="#">Catalog</a></li>
               <li><a class="nav-link" href="#">News</a></li>
@@ -29,7 +29,7 @@
               <li><a class="nav-link" href="#">Contacts</a></li>
               <li<a class="nav-link" href="#">For owners</a></li>
             </ul>
-            <ul class="navbar-nav">
+            <ul class="navbar-nav nav__icons">
               <li><a class="nav-link" href="#"><img src="./assets/searchIcon.svg" alt="searchIcon"></a></li>
               <li><a class="nav-link" href="#"><img src="./assets/globe.svg" alt="globeIcon"></a></li>
               <li><a class="nav-link" href="#"><img src="./assets/heartIcon.svg" alt="heartIcon"></a></li>
@@ -61,15 +61,18 @@
           <div class="section1__steps--container">
             <ol class="section1__steps">
               <li>
-                <span class="btn btn-success"><img src="./assets/interrogationIcon.svg" alt="">1 step</span>
+                <span class="btn btn-success"><img src="./assets/interrogationIcon.svg" alt="interrogationIcon">1
+                  step</span>
                 <p>Indicate age</p>
               </li>
               <li>
-                <span class="btn btn-info"><img src="./assets/interrogationIcon.svg" alt="">2 step</span>
+                <span class="btn btn-info"><img src="./assets/interrogationIcon.svg" alt="interrogationIcon">2
+                  step</span>
                 <p>Select breed</p>
               </li>
               <li>
-                <span class="btn btn-warning"><img src="./assets/interrogationIcon.svg" alt="">2 step</span>
+                <span class="btn btn-warning"><img src="./assets/interrogationIcon.svg" alt="interrogationIcon">3
+                  step</span>
                 <p>Find features</p>
               </li>
             </ol>
@@ -321,42 +324,48 @@
   </section>
   <section id="section4">
     <div class="container-xl section4__container">
-      <div>
-        <h2>Keep your ears open!</h2>
-        <p>Subscribe to our newsletter to be the first to know about news and promotions.</p>
-      </div>
-      <div class="section4__form--container">
-        <div class="submit__form">
-          <input class="form-control" type="email" placeholder="Enter your email">
-          <button class="btn btn-primary" type="submit"><i class="fa-solid fa-arrow-right"></i>
-          </button>
+      <div class="row section4__content">
+        <div class="section4__title--container">
+          <h2>Keep your ears open!</h2>
+          <p>Subscribe to our newsletter to be the first to know about news and promotions.</p>
         </div>
-        <p>Accordance with the Privacy Policy</p>
+        <div class="col-md-4 section4__form--container">
+          <div class="submit__form suscribe__form">
+            <input class="form-control" type="email" placeholder="Enter your email">
+            <button class="btn btn-primary" type="submit"><i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <p>Accordance with the Privacy Policy</p>
+        </div>
       </div>
     </div>
   </section>
   <footer id="footer">
     <div class="container-xl footer__container">
-      <div class="footer__logo">
-        <a class="nav-link" href="#"><img src="./assets/patnatDesktopLogo.svg" alt="logo"></a>
-      </div>
-      <div class="">
-        <ul class="nav footer__nav--container">
-          <li class="nav-item"><a class="nav-link active" href="#">About us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Choose pet food</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">For owners</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Catalog</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Promo</a></li>
-        </ul>
-      </div>
-      <div class="footer__joinCommunity">
-        <h6 class="">JOIN OUR COMMUNITY</h6>
-        <div class="submit__form">
-          <input class="form-control" type="email" placeholder="Enter your email">
-          <button class="btn btn-primary" type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+      <div class="row footer__content">
+        <div class="col-lg-2 footer__logo">
+          <a class="nav-link" href="#"><img src="./assets/patnatDesktopLogo.svg" alt="logo"></a>
         </div>
-        <p>Copyright © 2022 noname</p>
+        <div class="col-lg-6">
+          <ul class="nav footer__nav--container">
+            <li class="nav-item"><a class="nav-link active" href="#">About us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Choose pet food</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">For owners</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Catalog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Promo</a></li>
+          </ul>
+        </div>
+        <div class="col-md-8 col-lg-4 footer__joinCommunity">
+          <h6 class="">JOIN OUR COMMUNITY</h6>
+          <div class="submit__form community__form">
+            <input class="form-control" type="email" placeholder="Enter your email">
+            <button class="btn btn-primary" type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="footer__p--copyright">
+          <p>Copyright © 2022 noname</p>
+        </div>
       </div>
     </div>
   </footer>
