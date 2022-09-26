@@ -13,28 +13,30 @@
 
 <body>
   <header>
-    <div class="container-xl">
-      <nav class="navbar navbar-expand-lg">
+    <div class="container-xl header__container">
+      <div class="vector__container">
+      </div>
+      <nav class="navbar navbar-expand-lg header__navbar">
         <div class="container-fluid">
           <a id="logo" class="navbar-brand" href="#">PATNAT</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse navbar__menu--container" id="navbarNavAltMarkup">
             <ul class="navbar-nav">
               <li><a class="nav-link" href="#">Catalog</a></li>
               <li><a class="nav-link" href="#">News</a></li>
               <li><a class="nav-link" href="#">Advices</a></li>
               <li><a class="nav-link" href="#">Contacts</a></li>
-              <li<a class="nav-link" href="#">For owners</a></li>
+              <li><a class="nav-link" href="#">For owners</a></li>
             </ul>
             <ul class="navbar-nav nav__icons">
               <li><a class="nav-link" href="#"><img src="./assets/searchIcon.svg" alt="searchIcon"></a></li>
               <li><a class="nav-link" href="#"><img src="./assets/globe.svg" alt="globeIcon"></a></li>
               <li><a class="nav-link" href="#"><img src="./assets/heartIcon.svg" alt="heartIcon"></a></li>
               <li><a class="nav-link" href="#">Sign in</a></li>
-              <li<a class="nav-link" href="#"><img src="./assets/cartIcon.svg" alt="cartIcon"></a></li>
+              <li><a class="nav-link" href="#"><img src="./assets/cartIcon.svg" alt="cartIcon"></a></li>
             </ul>
           </div>
         </div>
@@ -44,7 +46,7 @@
           <!-- <img src="./assets/headerVectorMobile.svg" alt="vector"> -->
           <h1>All for pets</h1>
           <p class="header__p">In Patnat feed we use real high-quality meat from our own Miratorg farms</p>
-          <p><a href="#" class="btn btn-primary">Promotions</a></p>
+          <p><a href="#" class="btn btn-primary header__promotions--btn">Promotions</a></p>
         </div>
       </div>
     </div>
@@ -60,24 +62,24 @@
           </ul>
           <div class="section1__steps--container">
             <ol class="section1__steps">
-              <li>
+              <li class="section1__step--li">
                 <span class="btn btn-success"><img src="./assets/interrogationIcon.svg" alt="interrogationIcon">1
                   step</span>
                 <p>Indicate age</p>
               </li>
-              <li>
+              <li class="section1__step--li">
                 <span class="btn btn-info"><img src="./assets/interrogationIcon.svg" alt="interrogationIcon">2
                   step</span>
                 <p>Select breed</p>
               </li>
-              <li>
+              <li class="section1__step--li">
                 <span class="btn btn-warning"><img src="./assets/interrogationIcon.svg" alt="interrogationIcon">3
                   step</span>
                 <p>Find features</p>
               </li>
             </ol>
             <div class="">
-              <a href="#" class="btn btn-secondary btn-choose">Choose</a>
+              <a href="#" class="btn btn-secondary section1__btn--choose">Choose</a>
             </div>
           </div>
         </div>
@@ -121,7 +123,6 @@
     </div>
   </section>
   <section id="section2">
-    <!-- <div class="container-xxl"> -->
     <div class="container-xl section2__container">
       <div class="row">
         <div class="col-md-6 section2__title--container">
@@ -131,22 +132,22 @@
         <ul class="col-md-9 nav section2__nav">
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <img src="./assets/allIcon.svg">All
+              <img src="./assets/allIcon.svg" alt="Icon">All
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <img src="./assets/chatIcon.svg">News
+              <img src="./assets/chatIcon.svg" alt="Chat icon">News
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <img src="./assets/chatIcon.svg">Advices
+              <img src="./assets/chatIcon.svg" alt="Chat icon">Advices
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <img src="./assets/starIcon.svg">Promo
+              <img src="./assets/starIcon.svg" alt="Star icon">Promo
             </a>
           </li>
         </ul>
@@ -249,7 +250,7 @@
             <div class="card section2__card">
               <img src="./assets/section2CatFood.png" class="section2__card--img card-img-top" alt="Pets food">
               <div class="card-body section2__card--body">
-                <h5>Winner are in OZON!</h5>
+                <h5>Complete pet diet</h5>
                 <p class="card-text">Winner dry food for cats and dogs will be available in the OZON online store from
                   December 1, 2020</p>
               </div>
@@ -262,9 +263,10 @@
             <div class="card section2__card">
               <img src="./assets/section2Dog.png" class="section2__card--img card-img-top" alt="Dog">
               <div class="card-body section2__card--body">
-                <h5>Winner are in OZON!</h5>
-                <p class="card-text">Winner dry food for cats and dogs will be available in the OZON online store from
-                  December 1, 2020</p>
+                <h5>New line of Winner dog treats</h5>
+                <p class="card-text">Before you have a puppy, you need to think through everything and make sure that
+                  the pet fits into your lifestyle. Before you have a puppy, you need to think through everything and
+                  make sure that the pet fits into your lifestyle.</p>
               </div>
               <div class="section2__categoryCard--btn">
                 <a href="#" class="btn btn-success"><img src="./assets/starIcon.svg" alt="Promo">Promo</a>
@@ -279,17 +281,28 @@
             </ul>
           </div>
         </div>
-
       </div>
-      <!-- </div> -->
+    </div>
   </section>
   <section id="section3">
     <div class="container-xl section3__container">
-      <div class="section3__title--container">
-        <h2>#patnat</h2>
-        <p>Share photos of your pets on Instagram and win prizes!</p>
+      <div class="row section3__title--container">
+        <div class="col-md-4 ">
+          <h2>#patnat</h2>
+          <p>Share photos of your pets on Instagram and win prizes!</p>
+        </div>
+        <div class="col-md-8 section3__carouselbtn--desktop">
+          <button class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+      <div id="carouselExampleControlsNoTouching" class="carousel slide carousel__container" data-bs-touch="false">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./assets/section3Img1.png" class="" alt="Dog">
@@ -307,7 +320,7 @@
             <img src="./assets/section3Img5.png" class="" alt="Cat">
           </div>
         </div>
-        <div class="section3__carrouselBtn--container">
+        <div class="section3__carouselBtn--container">
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -320,6 +333,9 @@
           </button>
         </div>
       </div>
+      <div class="section3__carouselImg">
+        <img src="./assets/carouselDesktop.png" alt="carousel">
+      </div>
     </div>
   </section>
   <section id="section4">
@@ -330,7 +346,7 @@
           <p>Subscribe to our newsletter to be the first to know about news and promotions.</p>
         </div>
         <div class="col-md-4 section4__form--container">
-          <div class="submit__form suscribe__form">
+          <div class="submit__form subscribe__form">
             <input class="form-control" type="email" placeholder="Enter your email">
             <button class="btn btn-primary" type="submit"><i class="fa-solid fa-arrow-right"></i>
             </button>
@@ -346,7 +362,7 @@
         <div class="col-lg-2 footer__logo">
           <a class="nav-link" href="#"><img src="./assets/patnatDesktopLogo.svg" alt="logo"></a>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-7">
           <ul class="nav footer__nav--container">
             <li class="nav-item"><a class="nav-link active" href="#">About us</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Choose pet food</a></li>
@@ -356,7 +372,7 @@
             <li class="nav-item"><a class="nav-link" href="#">Promo</a></li>
           </ul>
         </div>
-        <div class="col-md-8 col-lg-4 footer__joinCommunity">
+        <div class="col-md-8 col-lg-3 footer__joinCommunity">
           <h6 class="">JOIN OUR COMMUNITY</h6>
           <div class="submit__form community__form">
             <input class="form-control" type="email" placeholder="Enter your email">
