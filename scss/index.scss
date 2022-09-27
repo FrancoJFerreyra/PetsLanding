@@ -1,13 +1,5 @@
 @import '../bootstrap/scss/bootstrap.scss';
 
-// @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-//   /* Retina-specific stuff here */
-// }
-// @include media-breakpoint-up(md) { ... }
-
-// @include media-breakpoint-up(xl) { ... }
-// @include media-breakpoint-up(xxl) { ... }
-
 #logo {
   display: block;
   text-indent: -1000px;
@@ -19,7 +11,6 @@
 }
 header {
   position: relative;
-  //  50% 10% / auto 40% no-repeat url(../assets/headerVector.png),
   background: bottom/auto 70% no-repeat url(../assets/headerBackground.png),
     linear-gradient(#e1dfe2, #d5d3d6);
 }
@@ -49,7 +40,6 @@ header {
   }
 }
 .header__p {
-  // @include font-size(1.5rem);
   color: $gray-900;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
@@ -479,7 +469,6 @@ footer {
     width: 10.5rem;
   }
   header {
-    // left 10% / auto 50% no-repeat url(../assets/headerVector.png),
     background: bottom/auto 100% no-repeat url(../assets/headerBackground.png),
       linear-gradient(#e1dfe2, #d5d3d6);
   }

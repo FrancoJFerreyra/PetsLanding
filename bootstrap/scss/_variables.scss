@@ -962,7 +962,7 @@ $form-select-bg-position: right $form-select-padding-x center !default;
 $form-select-bg-size: 32px 32px !default; // In pixels because image dimensions
 $form-select-indicator-color: $gray-800 !default;
 
-$form-select-indicator: url(../../assets/selectIcon.svg) !default;
+$form-select-indicator: url(../assets/selectIcon.svg) !default;
 
 $form-select-feedback-icon-padding-end: $form-select-padding-x * 2.5 +
   $form-select-indicator-padding !default;
